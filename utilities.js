@@ -5,6 +5,7 @@ window.onload = function()
     Alpine.data('randomizer', function() {
         return {
           nameList: nameList,
+          randomizedName: '',
           randomizeName() {
             const randomIndex = Math.floor(Math.random() * this.nameList.length);
             this.randomizedName = this.nameList[randomIndex];
