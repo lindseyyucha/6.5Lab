@@ -3,6 +3,6 @@ layout: layout.liquid
 title: 11ty Boilerplate
 ---
 <div x-data="{ nameList: ['Tifa', 'Aerith', 'Cloud', 'Barret', 'Yuffie', 'Red', 'Biggs', 'Zach', 'Sephiroth', 'Jessie'], randomizedName: '' }">
-    <h1><button @click="randomizedName = nameList[Math.floor(Math.random() * nameList.length)]">Click me!</button></h1>
-    <p x-text="randomizedName"></p>
+    <p><button @click="randomizedName = nameList[Math.floor(Math.random() * nameList.length)]">Click me!</button></p>
+    <h1 x-text="randomizedName"></h1>
 </div>
